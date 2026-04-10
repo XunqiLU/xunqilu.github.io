@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title">Lu Xunqi - Portfolio</title>
+    <title data-i18n="page_title">Lu Xunqi - Homepage</title>
     <!-- 引入 Tailwind CSS 用于快速排版 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 FontAwesome 用于图标 -->
@@ -91,7 +91,7 @@
                         </p>
                     </div>
                     <div class="order-1 lg:order-2 lg:w-1/3 flex justify-center lg:justify-end items-start w-full">
-                        <!-- 生活照改为 4:3 比例横向，使用 w-72 h-54 保证宽高比 -->
+                        <!-- 生活照 4:3 比例横向，使用 w-72 h-54 保证宽高比 -->
                         <img src="./photo.jpg" alt="Lifestyle Photo" class="w-72 h-[216px] object-cover rounded-2xl shadow-md bg-gray-100 aspect-[4/3]">
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                 nav_awards: "Awards",
 
                 about_desc: "Hello, welcome to my homepage! I am Lu Xunqi, a [ToDo] at the [ToDo] University's [ToDo] Laboratory. My research interests lie in Natural Human-Computer Interaction (HCI) and Machine Learning (ML), specifically in Large Language Models (LLMs).",
-                download_cv: "Download CV",
+                download_cv: "Download my CV here",
                 interests_title: "Interests",
                 edu_title: "Education"
             },
@@ -203,7 +203,7 @@
 
                 bio_line1: "[ToDo]学生",
                 bio_line2: "[ToDo]大学",
-                bio_line3: "[ToDo]Lab",
+                bio_line3: "[ToDo]实验室",
 
                 nav_about: "简介",
                 nav_experience: "经历",
@@ -212,7 +212,7 @@
                 nav_awards: "荣誉",
 
                 about_desc: "您好，欢迎来到我的个人主页！我叫卢勋琦，是[ToDo]大学[ToDo]实验室的一名[ToDo]。我的研究兴趣在于人机交互（HCI）和机器学习（ML）领域，特别是大语言模型（LLMs）方向。",
-                download_cv: "下载我的简历",
+                download_cv: "Download my CV here",
                 interests_title: "兴趣",
                 edu_title: "教育背景"
             },
@@ -230,8 +230,8 @@
                 nav_publications: "出版物",
                 nav_awards: "受賞歴",
 
-                about_desc: "こんにちは、ようこそ私のホームページ!盧 勲琦(ロ クンキ)と申します。現在は[ToDo]大学の[ToDo]実験室の[ToDo]です。研究の関心はヒューマンインタラクション(HCI)と機械学習(ML)の分野にあり、特に大言語モデル(LLMs)にあります。",
-                download_cv: "履歴書をダウンロード",
+                about_desc: "こんにちは！私のホームページへようこそ。盧 勲琦(ロ クンキ)と申します。現在は[ToDo]大学の[ToDo]研究室の[ToDo]です。研究の関心はヒューマン・コンピュータ・インタラクション(HCI)と機械学習(ML)の分野にあり、特に大規模言語モデル(LLMs)です。",
+                download_cv: "Download my CV here",
                 interests_title: "興味・関心",
                 edu_title: "学歴"
             }
@@ -240,13 +240,13 @@
         // -------------------------------------------------------------------------
         // 2. 动态列表数据区（核心区！增加、删除、修改项目都在这里操作）
         // -------------------------------------------------------------------------
-        const portfolioData = {
+        const homepageData = {
 
             // ★ 兴趣列表 ★
             interests: [
-                { en: "Large Language Models (LLMs)", zh: "大语言模型 (LLMs)", ja: "大規模言語モデル (LLM)" },
-                { en: "Human-Computer Interaction (HCI)", zh: "人机交互（HCI）", ja: "Human-Computer Interaction (HCI)" },
-                { en: "Machine Learning (ML)", zh: "机器学习（ML）", ja: "機械学習(ML)" }
+                { en: "Large Language Models (LLMs)", zh: "大语言模型 (LLMs)", ja: "大規模言語モデル (LLMs)" },
+                { en: "Human-Computer Interaction (HCI)", zh: "人机交互 (HCI)", ja: "ヒューマン・コンピュータ・インタラクション (HCI)" },
+                { en: "Machine Learning (ML)", zh: "机器学习 (ML)", ja: "機械学習 (ML)" }
             ],
 
             // ★ 教育列表 ★
@@ -266,11 +266,11 @@
                     logo: "./logo/tsukuba.jpg",
                     isCurrent: true,
                     en: {
-                        role: "[ToDo]", time: "Oct. 2026 - Present ・ [ToDo]", org: "[ToDo]",
+                        role: "[ToDo]", time: "Oct. 2026 - Present ・ [ToDo], Japan", org: "[ToDo]",
                         desc: ["[ToDo]"]
                     },
                     zh: {
-                        role: "[ToDo]", time: "2026年10月 - 至今 ・ [ToDo]", org: "[ToDo]",
+                        role: "[ToDo]", time: "2026年10月 - 至今 ・ 日本[ToDo]", org: "[ToDo]",
                         desc: ["[ToDo]"]
                     },
                     ja: {
@@ -282,7 +282,7 @@
                     logo: "./logo/assistant.jpg",
                     isCurrent: false,
                     en: {
-                        role: "Research Assistant", time: "Jun. 2025 - Mar. 2026 ・ Anhui, Hefei", org: "Hefei University of Technology",
+                        role: "Research Assistant", time: "Jun. 2025 - Mar. 2026 ・ Anhui, China", org: "Hefei University of Technology",
                         desc: ["Project title: Multi-level Collaborative Identification of Dominant Forest Tree Species Using Spaceborne Multi-source Remote Sensing Data"]
                     },
                     zh: {
@@ -291,18 +291,18 @@
                     },
                     ja: {
                         role: "研究アシスタント", time: "2025年6月 - 2026年3月 ・ 中国安徽", org: "合肥工業大学",
-                        desc: ["プロジェクト：星載多源遥感情報多層級協同の森林優勢樹種公類識別方法"]
+                        desc: ["プロジェクト：星載多源遥感情報多層級協同の森林優勢樹種分類識別方法"]
                     }
                 },
                 {
                     logo: "./logo/intern.jpg",
                     isCurrent: false,
                     en: {
-                        role: "Intern", time: "Jul. 2023 - Jun. 2024 ・ Anhui, Hefei", org: "Institute of Artificial Intelligence, Hefei Comprehensive National Science Center",
+                        role: "Intern", time: "Jul. 2023 - Jun. 2024 ・ Anhui, China", org: "Institute of Artificial Intelligence, Hefei Comprehensive National Science Center",
                         desc: [
-                            "Project title: Research and Application of Ubiquitous Mental Computation and Interactive Intervention Technology",
-                            "Assisted with literature surveys on intelligent agents and community intelligence and other work",
-                            "The comprehensive evaluation grade of performance was EXCELLENT"
+                            "Project title: Research and Application of Ubiquitous Psychological Computing and Interactive Intervention Technology",
+                            "Assisted with literature surveys on intelligent agents and community intelligence",
+                            "Evaluated as EXCELLENT in the comprehensive performance assessment"
                         ]
                     },
                     zh: {
@@ -316,7 +316,7 @@
                     ja: {
                         role: "インターン", time: "2023年7月 - 2024年6月 ・ 中国安徽", org: "合肥総合国家科学センター人工知能研究院(安徽省人工知能実験室)",
                         desc: [
-                            "プロジェクト：普遍的心理計算と相互介入技術の研究と応用",
+                            "プロジェクト：ユビキタス心理コンピューティングと相互介入技術の研究と応用",
                             "エージェントとコミュニティ知能に関する文献調査などの業務に参加",
                             "総合評価で「優秀」を獲得"
                         ]
@@ -326,7 +326,7 @@
                     logo: "./logo/hfut.jpg",
                     isCurrent: false,
                     en: {
-                        role: "NLP Team Member", time: "Jul. 2023 - Jun. 2025 ・ Anhui, Hefei", org: "Multimodal Affective Computing Lab (MAC-Lab)",
+                        role: "NLP Team Member", time: "Jul. 2023 - Jun. 2025 ・ Anhui, China", org: "Multimodal Affective Computing Lab (MAC-Lab)",
                         desc: [
                             "Conducted research on a heterogeneous graph neural network for mathematical reasoning",
                             "Assisted on the research of a bottom-up graph neural network for expression solving"
@@ -351,18 +351,18 @@
                     logo: "./logo/hfut.jpg",
                     isCurrent: false,
                     en: {
-                        role: "Undergraduate Student", time: "Sep. 2021 - Jun. 2025", org: "Hefei University of Technology",
+                        role: "Undergraduate Student", time: "Sep. 2021 - Jun. 2025 ・ Anhui, China", org: "Hefei University of Technology",
                         desc: [
-                            "Study Secretary (Sep. 2022 – Jun. 2025)",
-                            "Volunteer at SMP 2023 (The Eleventh China National Conference on Social Media Processing) (Nov. 2023)",
-                            "Participated in Volunteer Activities for the Country People (Summer of 2023)",
-                            "Director at Self-discipline Committee (Oct. 2021 – Jul. 2023, awarded Advanced Individual)",
-                            "Member of Student Union of the school (Sep. 2021 – Jul. 2022), Department Minister (Sep. 2022 – Jul. 2023)",
-                            "Member of New Media Center (Sep. 2021 – Jul. 2022)"
+                            "Academic Representative (Sep. 2022 – Jun. 2025)",
+                            "Volunteer at SMP 2023 (The 11th China National Conference on Social Media Processing) (Nov. 2023)",
+                            "Participated in Summer \"Sanxiaxiang\" Rural Volunteer Activities (Summer 2023)",
+                            "Director of the Student Community Self-Governance Committee (Oct. 2021 – Jul. 2023, awarded Advanced Individual)",
+                            "Member of the Student Union (Sep. 2021 – Jul. 2022), Department Head (Sep. 2022 – Jul. 2023)",
+                            "Member of the New Media Center (Sep. 2021 – Jul. 2022)"
                         ]
                     },
                     zh: {
-                        role: "本科生", time: "2021年9月 - 2025年6月", org: "合肥工业大学",
+                        role: "本科生", time: "2021年9月 - 2025年6月 ・ 安徽合肥", org: "合肥工业大学",
                         desc: [
                             "学习委员 (2022年9月 – 2025年6月)",
                             "SMP 2023 (第十一届全国社会媒体处理大会) 志愿者 (2023年11月)",
@@ -373,12 +373,12 @@
                         ]
                     },
                     ja: {
-                        role: "学部生", time: "2021年9月 - 2025年6月", org: "合肥工業大学",
+                        role: "学部生", time: "2021年9月 - 2025年6月 ・ 中国安徽", org: "合肥工業大学",
                         desc: [
                             "学習委員 (2022年9月 – 2025年6月)",
                             "SMP 2023 (第11回中国ソーシャルメディア処理会議) ボランティア (2023年11月)",
-                            "農村ボランティア活動参加 (2023年夏)",
-                            "自律委員会 主任 (2021年10月 – 2023年7月、先進個人を受賞)",
+                            "三下郷（農村ボランティア）活動参加 (2023年夏)",
+                            "学生コミュニティ自律委員会 主任 (2021年10月 – 2023年7月、先進個人を受賞)",
                             "学生会 メンバー (2021年9月 – 2022年7月)、部長 (2022年9月 – 2023年7月)",
                             "ニューメディアセンター メンバー (2021年9月 – 2022年7月)"
                         ]
@@ -425,83 +425,83 @@
             // ★ 出版物列表 ★
             publications: [
                 {
-                    en: { text: "Xunqi Lu. 'Another Journal Publication placeholder', 2026.", link: "https://github.com" },
-                    zh: { text: "卢勋琦. '另一篇期刊论文占位', 2026.", link: "https://github.com" },
-                    ja: { text: "盧 勲琦. '別のジャーナル論文のプレースホルダー', 2026.", link: "https://github.com" }
+                    en: { text: "[ToDo]", link: "https://[ToDo].com" },
+                    zh: { text: "[ToDo]", link: "https://[ToDo].com" },
+                    ja: { text: "[ToDo]", link: "https://[ToDo].com" }
                 }
             ],
 
             // ★ 奖项列表 ★
             awards: [
                 {
-                    en: { name: "Project Leader, Undergraduate Innovation and Entrepreneurship Competition (Project: Road Damage Detection System Based on GNSS and Deep Learning),", desc: "2024" },
-                    zh: { name: "校级大学生创新创业训练计划项目，", desc: "2024" },
-                    ja: { name: "合肥工業大学大学生創業創造コンペティションプロジェクト責任者（GNSSと深層学習に基づく路面破損インテリジェント検知システム）、", desc: "2024" }
+                    en: { name: "Project Leader, Undergraduate Innovation and Entrepreneurship Training Program (Project: Intelligent Pavement Damage Detection System Based on GNSS and Deep Learning)", desc: "2024" },
+                    zh: { name: "校级大学生创新创业训练计划项目（《基于GNSS与深度学习的路面破损智能检测系统》）主持人", desc: "2024" },
+                    ja: { name: "合肥工業大学大学生イノベーション・起業トレーニングプログラム（プロジェクト「GNSSとディープラーニングに基づく路面損傷インテリジェント検知システム」）プロジェクト責任者", desc: "2024" }
                 },
                 {
-                    en: { name: "Third Prize, operation category and the paper category of the 15th National University GIS Skills Competition,", desc: "2023" },
-                    zh: { name: "第十五届全国高校GIS技能大赛操作赛道/论文赛道组三等奖，", desc: "2023" },
-                    ja: { name: "第15回全国高校GIS技能大会操作/論文組三等賞、", desc: "2023" }
+                    en: { name: "Third Prize in Operation/Paper Track, the 15th National University GIS Skills Competition", desc: "2023" },
+                    zh: { name: "第十五届全国高校GIS技能大赛操作赛道/论文赛道组三等奖", desc: "2023" },
+                    ja: { name: "第15回全国大学GIS技能大会 操作・論文部門 三等賞", desc: "2023" }
                 },
                 {
-                    en: { name: "Bronze Award, Internet+ Innovation and Entrepreneurship Competition, Hefei University of Technology (Project: Intelligent High-Speed Railway Operation Safety Detection System),", desc: "2023" },
-                    zh: { name: "第九届合肥工业大学“互联网+”大学生创新创业大赛本科生创意组铜奖，", desc: "2023" },
-                    ja: { name: "第九回合肥工業大学「インターネット+」大学生創業創造コンペティション学部生創造チーム銅賞（安行：高速鉄道運行安全インテリジェント検知システム）、", desc: "2023" }
+                    en: { name: "Bronze Award in Undergraduate Creative Group, the 9th \"Internet+\" Undergraduate Innovation and Entrepreneurship Competition of Hefei University of Technology (Project Leader: \"Anxing - Intelligent High-Speed Railway Operation Safety Detection System\")", desc: "2023" },
+                    zh: { name: "第九届合肥工业大学“互联网+”大学生创新创业大赛本科生创意组铜奖（《安行：高铁运行安全智能检测系统》项目负责人）", desc: "2023" },
+                    ja: { name: "第9回合肥工業大学「インターネット+」大学生イノベーション・起業コンテスト 学部生アイデア部門 銅賞（「安行：高速鉄道運行安全インテリジェント検知システム」プロジェクト責任者）", desc: "2023" }
                 },
                 {
-                    en: { name: "Winner Award, GIS Application Development Group in the Yizhirui Cup China University Students' GIS Software Development Competition,", desc: "2023" },
-                    zh: { name: "易智瑞杯中国大学生GIS软件开发竞赛·GIS应用开发组优胜奖，", desc: "2023" },
-                    ja: { name: "易智瑞杯中国大学生GISソフトウェア開発コンテスト・GIS応用開発組優勝賞、", desc: "2023" }
+                    en: { name: "Excellence Award in GIS Application Development Group, Esri Cup China University Students' GIS Software Development Competition", desc: "2023" },
+                    zh: { name: "易智瑞杯中国大学生GIS软件开发竞赛·GIS应用开发组优胜奖", desc: "2023" },
+                    ja: { name: "易智瑞杯中国大学生GISソフトウェア開発コンテスト GISアプリケーション開発部門 優秀賞", desc: "2023" }
                 },
                 {
-                    en: { name: "Third Prize, Anhui Provincial GIS Technology Competition and Yangtze River Delta Spatial Information Technology Competition,", desc: "2023" },
-                    zh: { name: "安徽省第十三届大学生GIS技能大赛暨长三角空间信息技术大赛GIS应用开发组三等奖，", desc: "2023" },
-                    ja: { name: "安徽省第十三回大学生GIS技術コンペティション及び長三角空間情報技術コンペティションGISアプリケーション開発チームメンバーとして三等賞、", desc: "2023" }
+                    en: { name: "Third Prize in GIS Application Development Group, the 13th Anhui Provincial College Students' GIS Skills Competition and Yangtze River Delta Spatial Information Technology Competition", desc: "2023" },
+                    zh: { name: "安徽省第十三届大学生GIS技能大赛暨长三角空间信息技术大赛GIS应用开发组三等奖", desc: "2023" },
+                    ja: { name: "安徽省第13回大学生GIS技能大会および長江デルタ空間情報技術コンテスト GISアプリケーション開発部門 三等賞", desc: "2023" }
                 },
                 {
-                    en: { name: "Second Prize, the 17th iCan College Students' Innovation and Entrepreneurship Competition of Hefei University of Technology,", desc: "2023" },
-                    zh: { name: "第十七届iCan大学生创新创业合肥工业大学选拔赛二等奖，", desc: "2023" },
-                    ja: { name: "第17回iCan大学生創新創業合肥工業大学選抜戦二等賞、", desc: "2023" }
+                    en: { name: "Second Prize, the 17th iCAN College Students' Innovation and Entrepreneurship Competition (Hefei University of Technology Preliminary)", desc: "2023" },
+                    zh: { name: "第十七届iCan大学生创新创业合肥工业大学选拔赛二等奖", desc: "2023" },
+                    ja: { name: "第17回iCAN大学生イノベーション・起業コンテスト 合肥工業大学予選 二等賞", desc: "2023" }
                 },
                 {
-                    en: { name: "Third Prize, Big Data and Artificial Intelligence Application Competition, Hefei University of Technology,", desc: "2023" },
-                    zh: { name: "合肥工业大学大数据与人工智能应用竞赛三等奖，", desc: "2023" },
-                    ja: { name: "合肥工業大学ビッグデータと人工知能応用コンペティション三等賞、", desc: "2023" }
+                    en: { name: "Third Prize, Big Data and Artificial Intelligence Application Competition, Hefei University of Technology", desc: "2023" },
+                    zh: { name: "合肥工业大学大数据与人工智能应用竞赛三等奖", desc: "2023" },
+                    ja: { name: "合肥工業大学ビッグデータ及び人工知能応用コンテスト 三等賞", desc: "2023" }
                 },
                 {
-                    en: { name: "2022-2023 Academic Year Student Community Self-Governance Committee Advanced Individual,", desc: "2023" },
-                    zh: { name: "2022-2023学年学生社区自律委员会先进个人，", desc: "2023" },
-                    ja: { name: "2022-2023学年学生コミュニティ自律委員会先進個人、", desc: "2023" }
+                    en: { name: "Advanced Individual of the Student Community Self-Governance Committee, 2022-2023 Academic Year", desc: "2023" },
+                    zh: { name: "2022-2023学年学生社区自律委员会先进个人", desc: "2023" },
+                    ja: { name: "2022-2023学年度 学生コミュニティ自律委員会 先進個人", desc: "2023" }
                 },
                 {
-                    en: { name: "Second Prize, the 11th Water Resources Innovation Design Competition of Hefei University of Technology,", desc: "2023" },
-                    zh: { name: "合肥工业大学第十一届水利创新设计大赛二等奖，", desc: "2023" },
-                    ja: { name: "合肥工業大学第十一回水利革新デザイン大会第二等賞、", desc: "2023" }
+                    en: { name: "Second Prize, the 11th Water Conservancy Innovation Design Competition, Hefei University of Technology", desc: "2023" },
+                    zh: { name: "合肥工业大学第十一届水利创新设计大赛二等奖", desc: "2023" },
+                    ja: { name: "合肥工業大学第11回水利イノベーションデザインコンテスト 二等賞", desc: "2023" }
                 },
                 {
-                    en: { name: "Third Prize, Map Story Group of the Yizhirui Cup Chinese University GIS Software Development Competition,", desc: "2022" },
-                    zh: { name: "易智瑞杯中国大学生GIS软件开发竞赛·地图故事组比赛三等奖，", desc: "2022" },
-                    ja: { name: "易智瑞杯中国大学生GISソフトウェア開発コンテスト・地図のストーリ組のコンテスト三等賞、", desc: "2022" }
+                    en: { name: "Third Prize in Map Story Group, Esri Cup China University Students' GIS Software Development Competition", desc: "2022" },
+                    zh: { name: "易智瑞杯中国大学生GIS软件开发竞赛·地图故事组比赛三等奖", desc: "2022" },
+                    ja: { name: "易智瑞杯中国大学生GISソフトウェア開発コンテスト マップストーリー部門 三等賞", desc: "2022" }
                 },
                 {
-                    en: { name: "Second prize, provincial competition of the Third National English Proficiency Competition for Higher Education Institutions,", desc: "2022" },
-                    zh: { name: "第三届全国高等院校英语能力大赛省赛二等奖，", desc: "2022" },
-                    ja: { name: "第三回全国の大学の英語能力コンペティション省コンペ二等賞、", desc: "2022" }
+                    en: { name: "Second Prize in Provincial Competition, the 3rd National English Proficiency Competition for College Students", desc: "2022" },
+                    zh: { name: "第三届全国高等院校英语能力大赛省赛二等奖", desc: "2022" },
+                    ja: { name: "第3回全国大学英語能力コンテスト 省大会 二等賞", desc: "2022" }
                 },
                 {
-                    en: { name: "Third Prize, the Finals of Pigai Cup National English Vocabulary Competition for College Students,", desc: "2022" },
-                    zh: { name: "“批改网杯”全国大学生英语词汇大赛决赛三等奖，", desc: "2022" },
-                    ja: { name: "「批改網杯」全国大学生英語語彙コンペティション決勝三等賞、", desc: "2022" }
+                    en: { name: "Third Prize in the Finals of \"Pigaiwang Cup\" National English Vocabulary Competition for College Students", desc: "2022" },
+                    zh: { name: "“批改网杯”全国大学生英语词汇大赛决赛三等奖", desc: "2022" },
+                    ja: { name: "「批改網杯」全国大学生英語語彙コンテスト 決勝 三等賞", desc: "2022" }
                 },
                 {
-                    en: { name: "National Second Prize, National English Translation Competition for College Students,", desc: "2021" },
-                    zh: { name: "全国大学生英语翻译大赛国家级二等奖，", desc: "2021" },
-                    ja: { name: "全国大学生英語翻訳コンペティション国家級二等賞、", desc: "2021" }
+                    en: { name: "National Second Prize, National English Translation Competition for College Students", desc: "2021" },
+                    zh: { name: "全国大学生英语翻译大赛国家级二等奖", desc: "2021" },
+                    ja: { name: "全国大学生英語翻訳コンテスト 国家級二等賞", desc: "2021" }
                 },
                 {
-                    en: { name: "The 11th Shangxin scholarship,", desc: "2021" },
-                    zh: { name: "第十一届尚新奖学金，", desc: "2021" },
-                    ja: { name: "第十一回尚新奨学金、", desc: "2021" }
+                    en: { name: "The 11th Shangxin Scholarship", desc: "2021" },
+                    zh: { name: "第十一届尚新奖学金", desc: "2021" },
+                    ja: { name: "第11回尚新奨学金", desc: "2021" }
                 }
             ]
         };
@@ -510,40 +510,38 @@
         // -------------------------------------------------------------------------
         // -------------------------------------------------------------------------
         //                      ↓↓↓ 【核心渲染引擎】 ↓↓↓
-        //                   (正常情况下，请不要修改以下代码)
         // -------------------------------------------------------------------------
         // -------------------------------------------------------------------------
         function renderDynamicContent(lang) {
 
             // 渲染兴趣
-            // 圆点颜色由 bg-gray-400 改为 bg-gray-700
-            // 文字大小由 text-lg 保持，颜色由 text-gray-700 保持 (与 About Me 介绍文字同色同大小)
-            document.getElementById('interests-list').innerHTML = portfolioData.interests.map(item => `
+            // 圆点颜色 bg-gray-700
+            // 文字大小 text-lg，颜色 text-gray-700 (与 About Me 介绍文字同色同大小)
+            document.getElementById('interests-list').innerHTML = homepageData.interests.map(item => `
                 <li class="flex items-center"><span class="w-2.5 h-2.5 rounded-full bg-gray-700 mr-4"></span><span class="text-lg text-gray-700">${item[lang]}</span></li>
             `).join('');
 
             // 渲染教育
-            document.getElementById('education-list').innerHTML = portfolioData.education.map(item => `
+            document.getElementById('education-list').innerHTML = homepageData.education.map(item => `
                 <li class="flex items-start gap-6">
                     <i class="fa-solid fa-graduation-cap text-gray-400 mt-1 text-2xl"></i>
                     <div>
-                        <!-- degree 字体大小与 About Me 一致(text-lg)，取消标粗(font-normal或font-medium)，颜色为黑色(text-gray-900) -->
+                        <!-- degree 字体大小与 About Me 一致(text-lg)，颜色为黑色(text-gray-900) -->
                         <div class="text-lg font-medium text-gray-900">${item[lang].degree}</div>
                         <!-- school 字体缩小(text-base)，保持比 degree 小 -->
                         <div class="text-base text-gray-600 mt-1">${item[lang].school}</div>
-                        <!-- 删除了 time 的显示 -->
                     </div>
                 </li>
             `).join('');
 
             // 渲染经历（自动计算连线和圆点）
-            document.getElementById('experience-list').innerHTML = portfolioData.experiences.map((exp, index) => {
+            document.getElementById('experience-list').innerHTML = homepageData.experiences.map((exp, index) => {
                 const isFirst = index === 0;
-                const isLast = index === portfolioData.experiences.length - 1;
+                const isLast = index === homepageData.experiences.length - 1;
                 const data = exp[lang];
 
                 let linesHTML = '';
-                if (portfolioData.experiences.length > 1) {
+                if (homepageData.experiences.length > 1) {
                     if (isFirst) {
                         linesHTML = `<div class="absolute left-[15px] top-1/2 -bottom-16 w-[2px] bg-blue-200 z-0"></div>`;
                     } else if (isLast) {
@@ -558,10 +556,10 @@
 
                 const circleClass = exp.isCurrent ? "bg-blue-500" : "bg-white border-2 border-blue-500";
 
-                // lg:-ml-[64px] 是经过精密计算的，用来将文字左侧死死对齐到 logo 的垂直中心
-                // org: 颜色变回 text-gray-900，取消加粗，大小 text-lg
-                // role: 大小变 text-xl，颜色 text-gray-500
-                // desc: 字体变小为 text-base
+                // lg:-ml-[64px] 是经过精密计算的，用来将文字左侧对齐到 logo 的垂直中心
+                // org: 颜色 text-gray-900，大小 text-lg
+                // role: 大小 text-xl，颜色 text-gray-500
+                // desc: 字体为 text-base
                 return `
                     <div class="relative pl-12 md:pl-16 group">
                         ${linesHTML}
@@ -588,7 +586,7 @@
             }).join('');
 
             // 渲染项目
-            document.getElementById('projects-list').innerHTML = portfolioData.projects.map(proj => {
+            document.getElementById('projects-list').innerHTML = homepageData.projects.map(proj => {
                 const data = proj[lang];
                 const tagsHTML = proj.tags.map(tag => `<span class="bg-gray-50 border border-gray-200 px-4 py-2 rounded-full shadow-sm">${tag}</span>`).join('');
                 return `
@@ -608,8 +606,8 @@
             }).join('');
 
             // 渲染出版物
-            // 字体大小调整为 text-lg
-            document.getElementById('publications-list').innerHTML = portfolioData.publications.map(pub => `
+            // 字体大小为 text-lg
+            document.getElementById('publications-list').innerHTML = homepageData.publications.map(pub => `
                 <li class="text-lg">
                     <span>${pub[lang].text}</span>
                     <a href="${pub[lang].link}" target="_blank" class="text-blue-500 hover:text-blue-700 underline break-all">${pub[lang].link}</a>
@@ -617,9 +615,9 @@
             `).join('');
 
             // 渲染奖项
-            // 字体大小调整为 text-lg
+            // 字体大小为 text-lg
             // 取消标点和前面的小圆点已在 HTML 结构(list-none)和数据中处理
-            document.getElementById('awards-list').innerHTML = portfolioData.awards.map(award => `
+            document.getElementById('awards-list').innerHTML = homepageData.awards.map(award => `
                 <li class="text-lg"><span>${award[lang].name}</span> <span class="text-gray-500">${award[lang].desc}</span></li>
             `).join('');
         }
